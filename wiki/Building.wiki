@@ -1,3 +1,4 @@
+#summary Сборка приложения
 = Building =
 
   # Copy gradle.defaults to gradle.properties
