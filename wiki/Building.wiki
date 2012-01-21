@@ -1,0 +1,9 @@
+#summary One-sentence summary of this page.
+
+= Building =
+
+  # Copy gradle.defaults to gradle.properties
+  # Edit gradle.properties
+  # Create conf/keystore/developer.keystore
+  # Run gradle
+  # Create Eclipse project by "gradle eclipse"
