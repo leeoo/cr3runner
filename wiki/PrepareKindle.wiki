@@ -1,0 +1,20 @@
+#summary Подготовка Kindle к запуску приложения
+
+= Подготовка =
+
+Начнем с того, что запуск программы предполагается на Kindle 4 (без тачскрина).
+
+Первым делом требуется получить root-доступ как описано в других источниках.
+
+Создаем файл developer.keystore и помещаем его в /var/local/java/keystore/ на Kindle, а также в conf/keystore проекта (используется при сборке).
+
+Правим файл /opt/amazon/ebook/security/external.policy на Kindle. Добавляем в него
+
+{{{
+grant {
+  permission java.io.FilePermission "/mnt/us/qtKindle/-", "read,execute";
+  permission java.io.FilePermission "/mnt/us/cr3/-", "read,execute";
+};
+}}}
+
+Распаковываем CR3 в /mnt/us
