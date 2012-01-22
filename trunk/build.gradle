@@ -6,12 +6,14 @@ apply plugin: 'eclipse'
 sourceCompatibility = 1.4
 targetCompatibility = 1.4
 
-version = '1.8' // '1.0', '1.0-SNAPSHOT'
+version = '2.5'
 archivesBaseName = 'cr3runner'
 title = "\"CR3 Runner v$version\""
+eclipse.project.name = 'CR3Runner'
 
 dependencies {
     compile files("$env_libDir/Kindlet-1.3.jar")
+    testCompile files(env_junit3jar)
 }
 
 jar {
