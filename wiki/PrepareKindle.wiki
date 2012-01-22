@@ -13,6 +13,7 @@
 {{{
 grant {
   permission java.io.FilePermission "/mnt/us/qtKindle/-", "read,execute";
+  permission java.io.FilePermission "/mnt/us/cr3runner/-", "read,write,execute";
   permission java.io.FilePermission "/mnt/us/cr3/-", "read,execute";
 };
 }}}
