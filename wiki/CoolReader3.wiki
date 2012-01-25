@@ -1,0 +1,5 @@
+#summary Порт Cool Reader 3 на устройства Amazon Kindle.
+
+= Cool Reader 3 =
+
+Смотри [http://www.the-ebook.org/forum/viewtopic.php?t=20811 форум]
