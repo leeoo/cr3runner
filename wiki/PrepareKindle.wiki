@@ -77,11 +77,13 @@ mount -t ext3 -o rw /dev/mmcblk0p1 /mnt/main
 
 Сделать это можно с помощью того же Far. В конец файла добавляем строки:
 
+{{{
 grant {
   permission java.io.FilePermission "/mnt/us/qtKindle/-", "read,execute";
   permission java.io.FilePermission "/mnt/us/cr3runner/-", "read,write,execute";
   permission java.io.FilePermission "/mnt/us/cr3/-", "read,execute";
 };
+}}}
 
 Скачиваем файл developer.keystore и помещаем его в папку /var/local/java/keystore.
 
