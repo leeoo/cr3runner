@@ -103,7 +103,7 @@ rm -r  /mnt/main
 
 Распаковываем CR3 в корень. При этом там появляются папки cr3 и qtKindle.
 
-Папку qtKindle меняем на новую версию Qt, например, [http://narod.ru/disk/38773397001/qtKindle_k3_k4.zip.html отсюда].
+Папку qtKindle меняем на новую версию Qt, например, на момент написания [http://www.mediafire.com/?qzdy7xdi550pd6s отсюда] или [http://narod.ru/disk/38773397001/qtKindle_k3_k4.zip.html отсюда] (copyright by andy wooden).
 
 == Установка CR3Runner ==
 
