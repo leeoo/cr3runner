@@ -20,10 +20,7 @@ package kz.pvnhome.cr3runner;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.GridLayout;
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.List;
 
 import com.amazon.kindle.kindlet.AbstractKindlet;
@@ -86,8 +83,13 @@ public class CR3RunnerKindlet extends AbstractKindlet implements CommandExecuter
          textArea.setText("runtime");
          rootContainer.repaint();
 
-         Process p = runtime.exec(new String[]{command.getPath() + File.separatorChar + command.getCommand(), command.getParam()}, null, new File(command.getPath()));
+         // Process p = 
+         runtime.exec(new String[]{command.getPath() + File.separatorChar + command.getCommand(), command.getParam()}, null, new File(command.getPath()));
 
+         /*
+          * Убрал ожидание и всю проверку результата выполнения по причине подозрений на то,
+          * что это приодит к перезагрузке оболочки kindle.
+          * 
          p.waitFor();
 
          int exitValue = p.exitValue();
@@ -109,6 +111,7 @@ public class CR3RunnerKindlet extends AbstractKindlet implements CommandExecuter
 
          textArea.setText(sb.toString());
          rootContainer.repaint();
+         */
 
       } catch (Throwable ex1) {
          textArea.setText(ex1.getMessage());
