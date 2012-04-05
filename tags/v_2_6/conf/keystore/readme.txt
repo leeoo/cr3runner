@@ -1,0 +1,1 @@
+This dir must contain developer.keystore file
