@@ -6,7 +6,7 @@ apply plugin: 'eclipse'
 sourceCompatibility = 1.4
 targetCompatibility = 1.4
 
-version = '2.5'
+version = '2.6'
 archivesBaseName = 'cr3runner'
 title = "\"CR3 Runner v$version\""
 eclipse.project.name = 'CR3Runner'
